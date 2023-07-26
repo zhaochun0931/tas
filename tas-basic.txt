@@ -48,7 +48,7 @@ bosh deploy -d service-instance_4924d628-1cd1-45fd-a18e-6e9f6e9d9ea4 xx.yaml
 bosh -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff recreate rabbitmq-server/7d291961-1f3b-4684-a6ed-27f0a186814b
 bosh -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff recreate rabbitmq-server/7d291961-1f3b-4684-a6ed-27f0a186814b --fix
 
-
+bosh recreate -d service-instance_4924d628-1cd1-45fd-a18e-6e9f6e9d9ea4 --fix
 
 
 
