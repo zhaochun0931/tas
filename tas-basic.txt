@@ -6,6 +6,7 @@ bosh delete-deployment -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff
 
 
 bosh -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff vms
+bosh vms -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff
 bosh vms
 
 
