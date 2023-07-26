@@ -32,3 +32,10 @@ monit stop all
 monit restart all
 
 
+
+
+/var/vcap/store
+lsof /var/vcap/store
+
+
+/var/vcap/sys/log
