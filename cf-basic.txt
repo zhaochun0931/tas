@@ -1,1 +1,4 @@
 cf marketplace
+
+cf m -e p.rabbitmq
+
