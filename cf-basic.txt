@@ -10,7 +10,7 @@ cf delete-space gemfire-space
 
 cf orgs
 
-
+cf target -o gemfire-demo -s gemfire-space
 
 
 cf marketplace
