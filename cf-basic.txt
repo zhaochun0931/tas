@@ -17,3 +17,9 @@ cf marketplace
 
 cf m -e p.rabbitmq
 
+
+cf create-service p.rabbitmq single-node-3.7 rabbitmq-demo
+
+cf service rabbitmq-demo --guid
+
+cf create-service-key rabbitmq-demo rabbitmq-demo-sk
