@@ -1,3 +1,18 @@
+
+
+
+cf create-org gemfire-org
+cf delete-org gemfire-org
+
+cf create-space gemfire-space
+cf delete-space gemfire-space
+
+
+cf orgs
+
+
+
+
 cf marketplace
 
 cf m -e p.rabbitmq
