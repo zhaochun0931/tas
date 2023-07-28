@@ -26,6 +26,11 @@ $ cf service rabbitmq-demo --guid
 9c5a3943-2d41-40f5-88e9-971cfcd5dd25
 $
 
+
+bosh -d service-instance_9c5a3943-2d41-40f5-88e9-971cfcd5dd25 logs -f
+
+
+
 cf create-service-key rabbitmq-demo rabbitmq-demo-sk
 cf service-keys rabbitmq-demo
 cf service-key rabbitmq-demo rabbitmq-demo-sk
