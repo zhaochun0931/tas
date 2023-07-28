@@ -190,3 +190,10 @@ $ cf curl /v3/organizations/8d751cde-c77a-411e-b945-02ba24de0fe1
   }
 }
 $
+
+
+
+
+
+bosh delete-deployment -d service-instance_9c5a3943-2d41-40f5-88e9-971cfcd5dd25
+
