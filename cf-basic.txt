@@ -19,6 +19,9 @@ cf m -e p.rabbitmq
 
 
 cf create-service p.rabbitmq single-node-3.7 rabbitmq-demo
+cf delete-service rabbitmq-demo
+
+
 
 cf service rabbitmq-demo --guid
 
@@ -201,4 +204,6 @@ $
 
 
 bosh delete-deployment -d service-instance_9c5a3943-2d41-40f5-88e9-971cfcd5dd25
+
+
 
