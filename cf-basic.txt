@@ -18,7 +18,10 @@ cf marketplace
 cf m -e p.rabbitmq
 
 
+# create a service 
 cf create-service p.rabbitmq single-node-3.7 rabbitmq-demo
+cf create-service p-rabbitmq standard rabbitmq-demo
+
 cf delete-service rabbitmq-demo
 
 
