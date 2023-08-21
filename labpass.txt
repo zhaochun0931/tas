@@ -1,0 +1,7 @@
+labpass o -l LAB_ID
+
+
+labpass deploy -l LAB_ID
+
+
+labpass c -l LAB_ID
