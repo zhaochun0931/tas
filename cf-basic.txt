@@ -20,12 +20,12 @@ cf m -e p.rabbitmq
 
 # create a service 
 cf create-service p.rabbitmq single-node-3.7 rabbitmq-demo
-cf create-service p-rabbitmq standard rabbitmq-demo
 
+# delete a service
 cf delete-service rabbitmq-demo
 
 
-
+# check service guid
 cf service rabbitmq-demo --guid
 
 $ cf service rabbitmq-demo --guid
