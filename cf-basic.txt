@@ -19,7 +19,8 @@ cf m -e p.rabbitmq
 
 
 # create a service 
-cf create-service p.rabbitmq single-node-3.7 rabbitmq-demo
+cf create-service p.rabbitmq single-node rabbitmq-demo
+cf create-service p.rabbitmq single-node rabbitmq-demo -c '{ "plugins": { "rabbitmq_auth_backend_ldap": true } }' 
 
 # delete a service
 cf delete-service rabbitmq-demo
