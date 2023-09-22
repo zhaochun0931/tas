@@ -19,20 +19,20 @@ cf m -e p.rabbitmq
 
 
 # create a service 
-cf create-service p.rabbitmq single-node myrabbitmq2
-cf create-service p.rabbitmq single-node myrabbitmq2 -c '{ "plugins": { "rabbitmq_auth_backend_ldap": true } }' 
+cf create-service p.rabbitmq single-node myrabbitmq3
+cf create-service p.rabbitmq single-node myrabbitmq3 -c '{ "plugins": { "rabbitmq_auth_backend_ldap": true } }' 
 
 
 
 
 # delete a service
-cf delete-service rabbitmq-demo
+cf delete-service myrabbitmq3
 
 
 # check service guid
-cf service rabbitmq-demo --guid
+cf service myrabbitmq3 --guid
 
-$ cf service rabbitmq-demo --guid
+$ cf service myrabbitmq3 --guid
 9c5a3943-2d41-40f5-88e9-971cfcd5dd25
 $
 
