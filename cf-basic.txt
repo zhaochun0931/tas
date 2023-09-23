@@ -41,9 +41,21 @@ bosh -d service-instance_9c5a3943-2d41-40f5-88e9-971cfcd5dd25 logs -f
 
 
 
+
+
+
+
+
+
 cf create-service-key myrabbitmq3 mykey -c '{"tags":"administrator"}'
+
 cf service-keys myrabbitmq3
+
 cf service-key myrabbitmq3 mykey
+
+cf delete-service-key myrabbitmq3 mykey
+
+
 
 
 cf curl /v3/service_instances/9c5a3943-2d41-40f5-88e9-971cfcd5dd25
