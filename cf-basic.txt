@@ -20,20 +20,19 @@ cf m -e p.rabbitmq
 
 
 # create a service 
-cf create-service p.rabbitmq single-node myrabbitmq3
-cf create-service p.rabbitmq single-node myrabbitmq3 -c '{ "plugins": { "rabbitmq_auth_backend_ldap": true } }' 
+cf create-service p.rabbitmq single-node xxxrabbitmq1
+cf create-service p.rabbitmq single-node xxxrabbitmq1 -c '{ "plugins": { "rabbitmq_auth_backend_ldap": true } }' 
 
-
+cf service xxxrabbitmq1 --guid
 
 
 # delete a service
-cf delete-service myrabbitmq3
+cf delete-service xxxrabbitmq1
 
 
-# check service guid
-cf service myrabbitmq3 --guid
 
-$ cf service myrabbitmq3 --guid
+
+$ cf service xxxrabbitmq1 --guid
 9c5a3943-2d41-40f5-88e9-971cfcd5dd25
 $
 
@@ -48,13 +47,13 @@ bosh -d service-instance_9c5a3943-2d41-40f5-88e9-971cfcd5dd25 logs -f
 
 
 
-cf create-service-key myrabbitmq3 mykey -c '{"tags":"administrator"}'
+cf create-service-key xxxrabbitmq1 mykey -c '{"tags":"administrator"}'
 
-cf service-keys myrabbitmq3
+cf service-keys xxxrabbitmq1
 
-cf service-key myrabbitmq3 mykey
+cf service-key xxxrabbitmq1 mykey
 
-cf delete-service-key myrabbitmq3 mykey
+cf delete-service-key xxxrabbitmq1 mykey
 
 
 
