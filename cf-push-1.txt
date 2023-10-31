@@ -1,0 +1,4 @@
+cf enable-feature-flag diego_docker
+
+cf push xxx-app --docker-image ubuntu
+
