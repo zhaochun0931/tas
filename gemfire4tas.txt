@@ -1,6 +1,13 @@
 cf m
 
-cf create-service p-cloudcache small gemfire1
 
+# create service
+cf create-service p-cloudcache small gemfire1
 cf services
 
+
+
+
+# create service key
+cf create-service-key gemfire1 gemfire1_key
+cf service-key gemfire1 gemfire1_key
