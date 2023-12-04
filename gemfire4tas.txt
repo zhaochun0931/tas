@@ -1,0 +1,4 @@
+cf m
+
+cf cs p-cloudcache small gemfire1
+
