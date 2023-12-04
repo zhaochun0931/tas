@@ -1,4 +1,6 @@
 cf m
 
-cf cs p-cloudcache small gemfire1
+cf create-service p-cloudcache small gemfire1
+
+cf services
 
