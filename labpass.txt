@@ -12,6 +12,6 @@ labpass c -l LAB_ID
 
 
 
-1. wipe
+1. wipe the data
 2. install ops manager
 3. install tas
