@@ -9,3 +9,9 @@ slot34-35_tas_pks_and_services/3.0
 
 
 labpass c -l LAB_ID
+
+
+
+1. wipe
+2. install ops manager
+3. install tas
