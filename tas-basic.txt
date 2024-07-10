@@ -114,7 +114,7 @@ lsof /var/vcap/store
 
 bosh scp tls.key -d cf-2e0c501d46b5f0bb0f49 cloud_controller/032f0d86-9a57-46e6-ad91-7b9c510f5e59:/tmp
 bosh -d service-instance_0d483043-219c-4470-a3d5-17d133b211f2 scp  rabbitmq-server/1b0ee764-0e7b-4d8b-afd3-6da874825000:/tmp/xx.json .
-
+bosh -d service-instance_bee0ffa8-6402-4161-afd6-27fb225270e8 scp ./xx.json rabbitmq-server/0072ddb8-39c9-44d4-a6b9-275d597499ab:/tmp
 
 # 
 
