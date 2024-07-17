@@ -17,3 +17,9 @@ root@opsmgr-09-slot-35-tanzu-gss-labs:~#
 # list credentials
 credhub find
 credhub find -n /root
+
+
+
+# get the credential
+credhub get -n /root
+
