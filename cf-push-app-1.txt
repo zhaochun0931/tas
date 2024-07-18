@@ -29,11 +29,19 @@ cf delete xxx
 
 # cf push quickstart2
 cf push yyy -b binary_buildpack -c 'while true; do sleep 3600; done' -m 64m --no-route
-cf push yyy -b binary_buildpack -c 'while true; do sleep 3600; done' -m 64m --no-route --health-check-type none (did not work)
+cf push yyy -b binary_buildpack -c 'while true; do sleep 3600; done' -m 64m --no-route --health-check-type process
 
 
 
 # cf push quickstart3
 cf push yyy -p demo.jar
+
+
+
+
+
+
+
+cf push xxx  -p target/my-app-1.0-SNAPSHOT-jar-with-dependencies.jar --health-check-type process
 
 
