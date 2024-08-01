@@ -91,10 +91,15 @@ bosh -d service_instance deploy manifest.yml --recreate --fix
 
 
 
-# recreate the single VM, the IP of VM will change, VM id will change as well
-
+# recreate the single VM, the IP of VM will change, VM id will change as well， but the disk id will remain the same
 bosh -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff recreate rabbitmq-server/7d291961-1f3b-4684-a6ed-27f0a186814b
 bosh -d service-instance_8bb907c3-9d0f-4ac3-9aa4-e74d5ad0a2ff recreate rabbitmq-server/7d291961-1f3b-4684-a6ed-27f0a186814b --fix
+
+
+
+
+# list disk id
+bosh -d service_instance instances --details
 
 
 
