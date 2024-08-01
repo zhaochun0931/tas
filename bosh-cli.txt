@@ -1,4 +1,7 @@
 bosh -v
+bosh stemcells
+
+
 
 
 
