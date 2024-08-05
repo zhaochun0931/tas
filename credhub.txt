@@ -1,4 +1,18 @@
+# how to login the credhub
+credhub api https://10.225.56.1:8844/api/ --skip-tls-validation
 credhub login --client-name=director_to_credhub --client-secret=Mb3Z3zj575wchP8YCAgK_IJMVX-hvGhQ
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 root@opsmgr-09-slot-35-tanzu-gss-labs:~# credhub set -n /root -t certificate -c "$(cat /root/ca.crt)"
