@@ -35,5 +35,9 @@ credhub find -n /root
 
 
 # get the credential
-credhub get -n /root
+credhub get -n /p-bosh/service-instance_2edca074-bc51-4e4f-9491-20737ef9daef/tls_certificate
+
+
+
+
 
