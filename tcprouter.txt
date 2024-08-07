@@ -5,4 +5,44 @@ enable tcp router from VMware Tanzu Application Service tile
 
 
 
-tcp_router/081b4ad8-2f52-4542-82e6-d826ea8e27d4
+it will create a new VM for tcp router
+
+
+tcp_router/ff566b3c-34ef-4f46-b8bb-d298fce98b32                     running        az1  10.225.56.46  vm-4a7c4250-18b1-40bf-90eb-9a14d8fc3460  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+
+
+
+
+
+
+
+
+bosh vms
+
+
+Deployment 'cf-2975204a6f7f4724a4cb'
+
+Instance                                                            Process State  AZ   IPs           VM CID                                   VM Type      Active  Stemcell
+clock_global/fc620ff2-d0e6-461d-98fb-06b72685245c                   running        az1  10.225.56.42  vm-29ff1afe-ecd8-45ff-ad5e-893c729e98ea  medium.disk  true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+cloud_controller/b581eb64-21f6-4a24-9fd7-c4017004db42               running        az1  10.225.56.8   vm-48a4e3ff-cf3e-41c6-a9f9-339c38cba959  medium.disk  true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+cloud_controller_worker/8bf8541f-afa8-408c-ae64-90f81dc68c99        running        az1  10.225.56.9   vm-246454cc-cfd9-42c2-900d-ff0c592a9e31  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+credhub/30900333-748d-40b5-bb35-7118a927a213                        running        az1  10.225.56.44  vm-ebb9d7ea-0c32-42ae-b381-edaa85f160cc  large        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+diego_brain/e001cf81-9b93-42ba-8fe5-88f27729e1a1                    running        az1  10.225.56.10  vm-87e1cc21-f692-4a99-971c-f29203b5292c  small        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+diego_cell/c1b0c117-8666-4df8-bd3d-a5c259338d1f                     running        az1  10.225.56.38  vm-f5f3ea61-9467-49c6-8b1b-fe3b5ecc4f81  xlarge.disk  true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+diego_cell/d11f5d3d-3d23-40f1-85a0-e8c15fe37457                     running        az2  10.225.56.39  vm-cdc3b4dd-b37b-45d0-8ad3-e87d1a18257e  xlarge.disk  true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+diego_database/b6b13221-fe36-461c-82d5-6e994aeb85cd                 running        az1  10.225.56.6   vm-dff83090-a2b9-4dc7-a6a2-a319eef11889  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+doppler/45563b72-c38f-4d22-b7a3-136b693239c6                        running        az1  10.225.56.43  vm-a2aa1235-79bc-4579-8fcd-1b82beeb3d8e  small        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+log_cache/2265b42a-0fa2-4d50-a021-934ee95eb50e                      running        az1  10.225.56.41  vm-7b00ab9b-8f0d-4096-945b-04bcbefae12a  medium.mem   true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+loggregator_trafficcontroller/25eafd05-5682-4391-ba2b-9f7c793b920f  running        az1  10.225.56.40  vm-c9776697-792a-478a-abd4-aeeb7da2d8ee  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+mysql/d97e4a4a-f2b2-4940-9316-3f92ff419e84                          running        az1  10.225.56.5   vm-d3c3e305-f0b4-4346-adad-9f01888cd490  large.disk   true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+mysql_monitor/b2f8996d-6bc0-42d2-9682-50374bab5926                  running        az1  10.225.56.37  vm-9a3a28f4-8f6f-49b4-898f-ca169dfda10e  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+mysql_proxy/7884604c-cddc-4bbc-9c9e-d35fd6400795                    running        az1  10.225.56.4   vm-429a17af-2104-47ec-a811-a7a4e3c9eef1  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+nats/376b965b-c747-435b-9b49-23be11aba043                           running        az1  10.225.56.2   vm-fe48ac2b-3b11-455a-8d14-1e1cc769af91  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+nfs_server/f2892db9-bce4-48d2-8045-60f508d8dbdd                     running        az1  10.225.56.3   vm-14304680-b1e6-4d7f-89f4-6e78f78314b8  medium       true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+router/0cf1bcaf-6520-4588-8603-f6681adab5d3                         running        az1  10.225.56.55  vm-736db23d-850a-4df8-9b16-1c067d7e2c0f  micro.ram    true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+tcp_router/ff566b3c-34ef-4f46-b8bb-d298fce98b32                     running        az1  10.225.56.46  vm-4a7c4250-18b1-40bf-90eb-9a14d8fc3460  micro        true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+uaa/d45b873b-47b2-4603-aae4-455280f5ba9a                            running        az1  10.225.56.7   vm-8a2e0beb-28f4-4f27-8d8d-0eaabebc0c7a  medium.disk  true    bosh-vsphere-esxi-ubuntu-jammy-go_agent/1.423
+
+19 vms
+
+
