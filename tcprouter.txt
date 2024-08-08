@@ -20,6 +20,11 @@ Service-Gateway Access
 
 
 
+3. please specify the port range in the "Global Settings for On-Demand Plans" from the rabbitmq tile
+
+Port Range 2000-2100
+
+
 
 
 
