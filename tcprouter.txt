@@ -1,4 +1,4 @@
-enable tcp router from VMware Tanzu Application Service tile
+1. enable tcp router from VMware Tanzu Application Service tile
 
 
 
@@ -9,6 +9,23 @@ Click the VMware Tanzu Application Service for VMs tile.
 Select Networking.
 
 In TCP routing, click Allow.
+
+
+
+
+
+2. enable the service gateway from rabbitmq tile
+
+Service-Gateway Access
+
+
+
+
+
+
+
+
+
 
 
 
