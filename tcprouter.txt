@@ -2,6 +2,26 @@ enable tcp router from VMware Tanzu Application Service tile
 
 
 
+Go to the Tanzu Operations Manager Installation Dashboard.
+
+Click the VMware Tanzu Application Service for VMs tile.
+
+Select Networking.
+
+In TCP routing, click Allow.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
