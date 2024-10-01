@@ -3,6 +3,11 @@ bosh stemcells
 
 
 
+bosh cancel-task <task-id>
+
+
+
+
 
 
 
