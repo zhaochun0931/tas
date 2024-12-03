@@ -176,3 +176,8 @@ bosh -d service-instance_bee0ffa8-6402-4161-afd6-27fb225270e8 scp ./xx.json rabb
 
 bosh -d your-rabbbitmq-instance deploy modifed-manifest.yml --fix
 
+
+
+
+/var/vcap/jobs/rabbitmq-server/bin/pre-stop
+
