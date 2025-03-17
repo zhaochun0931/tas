@@ -181,3 +181,16 @@ bosh -d your-rabbbitmq-instance deploy modifed-manifest.yml --fix
 
 /var/vcap/jobs/rabbitmq-server/bin/pre-stop
 
+
+
+
+
+bosh update-resurrection off
+bosh -d <deployment> delete-vm  <vm cid>
+bosh manifest > manifest.yml
+edit manifest to upgraded jammy 1.785
+bosh -d <deployment> deploy manifest.yml --fix --skip-drain
+bosh update-resurrection on
+
+
+
